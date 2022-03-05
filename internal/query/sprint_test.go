@@ -43,9 +43,10 @@ func (sfp sprintFlagParser) GetString(name string) (string, error) {
 	return sfp.state, nil
 }
 
-func (sfp sprintFlagParser) GetStringArray(string) ([]string, error) { return []string{}, nil }
-func (sfp sprintFlagParser) GetUint(string) (uint, error)            { return 100, nil }
-func (sfp sprintFlagParser) Set(string, string) error                { return nil }
+func (sfp sprintFlagParser) GetStringArray(string) ([]string, error)             { return []string{}, nil }
+func (sfp sprintFlagParser) GetStringToString(string) (map[string]string, error) { return nil, nil }
+func (sfp sprintFlagParser) GetUint(string) (uint, error)                        { return 100, nil }
+func (sfp sprintFlagParser) Set(string, string) error                            { return nil }
 
 func TestSprintGet(t *testing.T) {
 	cases := []struct {
