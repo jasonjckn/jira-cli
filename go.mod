@@ -1,4 +1,4 @@
-module github.com/ankitpokhrel/jira-cli
+module github.com/jasonjckn/jira-cli
 
 go 1.17
 
